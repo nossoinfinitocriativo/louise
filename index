@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Copiar Código Pix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #ffffff; /* Cor de fundo branca */
+            color: #3b134c; /* Texto roxo escuro */
+        }
+        textarea {
+            width: 50%;
+            height: 80px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            background-color: #ffffff; /* Cor de fundo do campo de texto */
+            color: #3b134c; /* Cor do texto no campo de texto */
