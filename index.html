@@ -18,3 +18,45 @@
             margin-bottom: 20px;
             background-color: #ffffff; /* Cor de fundo do campo de texto */
             color: #3b134c; /* Cor do texto no campo de texto */
+            border: 2px solid #e6b800; /* Borda amarela */
+            border-radius: 10px; /* Borda arredondada */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #d9c6df; /* Cor de fundo do botão rosa */
+            color: #ffffff; /* Texto do botão branco */
+            border: none;
+            border-radius: 10px; /* Borda arredondada */
+        }
+        button:hover {
+            background-color: #755b91; /* Cor de fundo do botão ao passar o mouse (roxo escuro) */
+        }
+        p {
+            font-size: 18px;
+        }
+        .message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+    <body>
+    <h1>QUE BOM VER VOCÊ POR AQUI!!</h1>
+    <p>Clique no botão abaixo para copiar o código Pix:</p>
+    <textarea id="pixCode" readonly>00020126330014BR.GOV.BCB.PIX0111021701936695204000053039865802BR5921LOUISE LOURENCO SILVA6013CONCEICAO DAS62100506LOUISE6304C7B4</textarea>
+    <br>
+    <button onclick="copyPixCode()">Copiar Código Pix</button>
+    <p class="message">Agora só acessar o APP do seu banco e realizar o Pix.</p>
+    <p class="message">Obrigada. Nós vemos na festa!</p>
+<script>
+        function copyPixCode() {
+            var pixCode = document.getElementById("pixCode");
+            pixCode.select();
+            pixCode.setSelectionRange(0, 99999); // Para dispositivos móveis
+            document.execCommand("copy");
+            alert("Código Pix copiado!");
+        }
+    </script>
+</body>
+</html>
